@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-const user = () => {
+const User = () => {
 
   return (
     <div>
@@ -11,4 +11,4 @@ const user = () => {
   );
 }
 
-export default user;
+export default User;

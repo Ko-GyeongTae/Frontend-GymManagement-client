@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-const notice = () => {
+const Notice = () => {
 
   return (
     <div>
@@ -11,4 +11,4 @@ const notice = () => {
   );
 }
 
-export default notice;
+export default Notice;

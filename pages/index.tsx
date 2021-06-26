@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-const home = () => {
+const Home = () => {
 
   return (
     <div>
@@ -11,4 +11,4 @@ const home = () => {
   );
 }
 
-export default home;
+export default Home;
