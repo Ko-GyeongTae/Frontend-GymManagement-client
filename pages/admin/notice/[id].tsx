@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-export default () => {
+const NoticeHandle = () => {
   const router = useRouter();
   const { id } = router.query;
   return (
@@ -13,3 +13,4 @@ export default () => {
   );
 }
 
+export default NoticeHandle;
