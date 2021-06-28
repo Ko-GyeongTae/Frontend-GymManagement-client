@@ -1,6 +1,6 @@
-const loadImage = () => {
+const loadProfile = () => {
 
     return {}
 }
 
-export default loadImage;
+export default loadProfile;
