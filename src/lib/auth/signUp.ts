@@ -1,6 +1,23 @@
-const signUp = () => {
+import axios from "axios";
 
-    return {}
+const signUp = async(args: signUp_Req):Promise<any> => {
+    await axios.post(`${process.env.NEXT_PUBLIC_BASEURL}/api/auth`)
+    .then(res => {
+        console.log(res.data);
+        return res.data;
+    })
+    .catch(e => {
+        console.error(e);
+    })
 }
 
 export default signUp;
+
+export interface signUp_Req {
+    gym_code: string;
+    media_uid: string;
+    name: string;
+    phone: number;
+    email: string;
+    address: string;
+}
