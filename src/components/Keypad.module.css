@@ -1,0 +1,13 @@
+.Table {
+    display: 'table';
+    width: '100%';
+    height: '100%';
+}
+.TableRow {
+    display: 'table-row';
+}
+.TableColumn {
+    display: 'table-cell';
+    width: '33%';
+    height: '25%';
+}
