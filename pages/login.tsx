@@ -19,7 +19,12 @@ const Login = () => {
             <LoginButton backgroundColor={'white'} fontColor={'#8C837A'} left={70} top={200}/>
           </div>
           <div style={{width: '60%', border: 1, borderStyle: 'solid', borderColor: 'black'}}>
-            <h4>right</h4>
+            <div style={{width: '100%', height: '34%'}}>
+
+            </div>
+            <div style={{width: '100%', height: '66%', border: 1, borderStyle: 'solid', borderColor: 'black'}}>
+
+            </div>
           </div>
       </div>
     </div>
