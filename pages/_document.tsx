@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='ko'>
         <Head />
         <body style={{margin: 0, width: '100vw', height: '100vh'}}>
           <Main />

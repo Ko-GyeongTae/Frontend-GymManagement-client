@@ -1,7 +1,16 @@
 import { AppProps } from 'next/app'
+import Head from 'next/head'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default App;
