@@ -1,24 +1,29 @@
 {
-  "name": "gymmanagement-client",
+  "name": "frontend-personalblog-client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "deploy": "next build && next export && touch out/.nojekyll && git add out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
-    "next": "11.0.1",
+    "next": "10.2.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "typescript": "^4.3.2"
   },
   "devDependencies": {
-    "@types/node": "^15.12.4",
-    "@types/react": "^17.0.11",
-    "eslint": "7.29.0",
-    "eslint-config-next": "11.0.1",
-    "typescript": "^4.3.4"
-  }
+    "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "homepage": "https://Ko-GyeongTae.github.io/Frontend-PersonalBlog-client/"
 }
