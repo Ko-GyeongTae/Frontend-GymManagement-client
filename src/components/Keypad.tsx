@@ -11,7 +11,7 @@ const Keypad = (args: any) => {
         <div style={{ display: 'table', width: '100%', height: '100%' }}>
 
             <div style={{ display: 'table-row' }}>
-                <div style={{ display: 'table-cell', width: '33%', height: '25%' }} onClick={() => {
+                <div style={{ display: 'table-cell', width: '33%', height: '25%'}} onClick={() => {
                     phoneNum.push('1');
                     onPressButton();
                 }}>
