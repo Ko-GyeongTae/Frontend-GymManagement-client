@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import LoginButton from '../src/components/LoginButton';
 import Link from 'next/link';
+import login from "./api/auth/login";
 
 const Login = () => {
     const [phoneNum, setPhoneNum] = useState("");
@@ -113,7 +114,7 @@ const Login = () => {
                                         <h1>0</h1>
                                     </div>
                                     <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
-                                        console.log('done');
+                                        login({phone: phoneNum});
                                     }}>
                                         <h1>확인</h1>
                                     </div>
