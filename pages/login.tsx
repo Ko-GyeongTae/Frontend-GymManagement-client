@@ -32,10 +32,10 @@ const Login = () => {
                     </div>
                 </div>
                 <div style={{ width: '100%', height: '85%', display: 'flex' }}>
-                    <div style={{ width: '40%', height: '100%', backgroundColor: '#8C837A', alignItems: 'center', position: 'relative' }}>
+                    <div style={{ width: '40%', height: '100%', backgroundColor: '#8C837A', alignItems: 'center' }}>
                         <Link href='/login' passHref>
-                            <div style={{ width: 386, height: 68, backgroundColor: 'white', borderRadius: 49, textAlign: 'center' }}>
-                                <p style={{ fontSize: 23, fontFamily: 'Playbill', color: '#8C837A' }}>간편로그인</p>
+                            <div style={{ width: '80%', height: '10%', lineHeight: '10%', backgroundColor: 'white', borderRadius: 49, textAlign: 'center', position: 'relative', left:'10%', right: '10%' }}>
+                                <p style={{ fontSize: '250%', fontFamily: 'Playbill', color: '#010101', paddingTop: '10%' }}>간편로그인</p>
                             </div>
                         </Link>
                     </div>
@@ -46,68 +46,68 @@ const Login = () => {
                         <div style={{ width: 'auto', height: '70%', border: 1, borderStyle: 'solid', borderColor: '#707070' }}>
                             <div style={{ display: 'table', width: '100%', height: '100%' }}>
                                 <div style={{ display: 'table-row' }}>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('1');
                                     }}>
                                         <h1>1</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('2');
                                     }}>
                                         <h1>2</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('3');
                                     }}>
                                         <h1>3</h1>
                                     </div>
                                 </div>
                                 <div style={{ display: 'table-row' }}>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('4');
                                     }}>
                                         <h1>4</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('5');
                                     }}>
                                         <h1>5</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('6');
                                     }}>
                                         <h1>6</h1>
                                     </div>
                                 </div>
                                 <div style={{ display: 'table-row' }}>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('7');
                                     }}>
                                         <h1>7</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('8');
                                     }}>
                                         <h1>8</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('9');
                                     }}>
                                         <h1>9</h1>
                                     </div>
                                 </div>
                                 <div style={{ display: 'table-row' }}>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         setPhoneNum(phoneNum.slice(0, -1));
                                     }}>
                                         <h1>지우기</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         InputNumber('0');
                                     }}>
                                         <h1>0</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, paddingTop: 10, border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
                                         console.log('done');
                                     }}>
                                         <h1>확인</h1>
