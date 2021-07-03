@@ -41,7 +41,12 @@ const Login = () => {
                     </div>
                     <div style={{ width: '60%', height: '100%' }}>
                         <div style={{ width: '100%', height: '30%', textAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }}>
-                            <p style={{ fontSize: 60 }}>{phoneNum.slice(0, 3) + (phoneNum.length > 3 ? '-' : "") + phoneNum.slice(3, 7) + (phoneNum.length > 7 ? '-' : "") + phoneNum.slice(7, 11)}</p>
+                            <div style={{ width: '100%', height: '40%' }}>
+                                <p style={{ fontSize: 60 }}>{phoneNum.slice(0, 3) + (phoneNum.length > 3 ? '-' : "") + phoneNum.slice(3, 7) + (phoneNum.length > 7 ? '-' : "") + phoneNum.slice(7, 11)}</p>
+                            </div>
+                            <div style={{ width: '100%', height: '20%', position: 'relative' }}>
+                                <p style={{ fontSize: '100%' }}><Link href='/' passHref>이용약관</Link>과 <Link href='/'>개인정보취급방침</Link>에 동의하시면 휴대전화 번호 입력 후 아래 확인 버튼을 터치하세요.</p>
+                            </div>
                         </div>
                         <div style={{ width: 'auto', height: '70%', border: 1, borderStyle: 'solid', borderColor: '#707070' }}>
                             <div style={{ display: 'table', width: '100%', height: '100%' }}>
