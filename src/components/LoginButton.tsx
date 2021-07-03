@@ -12,7 +12,7 @@ const LoginButton = (props: any) => {
     )*/
     return (
         <Link href='/login' passHref>
-            <div style={{width: 386, height: 68, backgroundColor: props.backgroundColor, position: 'absolute', left: props.left, right: props.right, top: props.top, bottom: props.bottom, borderRadius: 49, textAlign: 'center'}}>
+            <div style={{width: 386, height: 68, backgroundColor: props.backgroundColor, position: 'absolute', right: props.right, bottom: props.bottom, borderRadius: 49, textAlign: 'center'}}>
                 <p style={{fontSize: 23, fontFamily: 'Playbill', color: props.fontColor}}>간편로그인</p>
             </div>
         </Link>
