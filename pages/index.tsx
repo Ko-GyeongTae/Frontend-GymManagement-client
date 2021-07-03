@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <>
     <Head>
-      <title>홈</title>
+      <title>Wim-Gym | Home</title>
     </Head>
-    <div style={{alignItems: 'center', overflowX: 'hidden', overflowY: 'hidden', width: '100%', height: '100%', margin: 0, padding: 0}}> 
+    <div style={{alignItems: 'center', overflowX: 'hidden', width: '100%', height: '100%', margin: 0, padding: 0}}> 
       <MainBackground/>
       <LoginButton backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={79} right={70}/>
     </div>
