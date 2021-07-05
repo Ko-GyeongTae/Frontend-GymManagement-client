@@ -3,10 +3,11 @@ import Head from "next/head";
 import LoginButton from '../src/components/LoginButton';
 import Link from 'next/link';
 import login from "./api/auth/login";
+import { useCookies } from "react-cookie";
 
 const Login = () => {
     const [phoneNum, setPhoneNum] = useState("");
-
+    const [cookies, setCookie, removeCookie] = useCookies(['accessToken']);
     const InputNumber = (args: string) => { // 전화번호 입력 제한 함수
         if (phoneNum.length < 11) {
             setPhoneNum(phoneNum + args); // 기존 문자열 + 누른 번호 
@@ -113,8 +114,10 @@ const Login = () => {
                                     }}>
                                         <h1>0</h1>
                                     </div>
-                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={() => {
-                                        login({phone: phoneNum});
+                                    <div style={{ display: 'table-cell', width: '33%', height: '20%', textAlign: 'center', fontSize: 20, verticalAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }} onClick={async() => {
+                                        let token = await login({phone: phoneNum})
+                                        console.log(token);
+                                        setCookie('accessToken', token, { path: '/' });
                                     }}>
                                         <h1>확인</h1>
                                     </div>
