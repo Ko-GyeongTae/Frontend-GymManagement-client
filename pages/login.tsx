@@ -25,7 +25,7 @@ const Login = () => {
                 <title>Wim-Gym | Login</title>
             </Head>
             <div style={{ width: '100%', height: '100vh', overflowX: 'hidden' }}>
-                <div style={{ display: 'flex', width: '100%', height: '15%', textAlign: 'center', marginTop: '5%' }}>
+                <div style={{ display: 'flex', width: '100%', height: '10%', textAlign: 'center', marginTop: '5%' }}>
                     <div style={{ width: '89%' }}>
                         <p style={{ verticalAlign: 'middle', fontSize: 33 }}>휴대전화번호를 눌러주세요.</p>
                     </div>
@@ -33,7 +33,7 @@ const Login = () => {
                         <p style={{ verticalAlign: 'middle', fontSize: 33 }}>취소</p>
                     </div>
                 </div>
-                <div style={{ width: '100%', height: '80%', display: 'flex', position: 'fixed', left: 0, bottom: 0, right: 0 }}>
+                <div style={{ width: '100%', height: '80vh', display: 'flex', position: 'fixed', left: 0, bottom: 0, right: 0 }}>
                     <div style={{ width: '40%', height: 'auto', backgroundColor: '#8C837A', alignItems: 'center' }}>
                         <Link href='/login' passHref>
                             <div style={{ width: '80%', height: '10%', lineHeight: '10%', backgroundColor: 'white', borderRadius: 49, textAlign: 'center', position: 'relative', left:'10%', right: '10%' }}>
