@@ -24,6 +24,7 @@ const login = async (args: login_Req): Promise<any> => {
         headers: headers
     })
     .then(res => {
+        alert('로그인 성공' + res.data.access_token)
         accessToken = res.data.access_token
     })
     .catch(e => {
