@@ -1,20 +1,23 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import MainBackground from "../src/components/MainBackground";
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import LoginButton from '../src/components/LoginButton';
+import MainBackground from '../src/components/MainBackground';
+import styles from './index.module.css'
 
 const Home = () => {
-  return (
-    <>
-      <Head>
-        <title>Wim-Gym | Home</title>
-      </Head>
-      <div style={{ alignItems: 'center', overflowX: 'hidden', width: '100%', height: '100%', margin: 0, padding: 0 }}>
-        <MainBackground />
-        <LoginButton backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={79} right={70} />
-      </div>
-    </>
-  );
+    const [width, setWidth] = useState(1);
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    })
+
+    return (
+        <div className={styles.Container}>
+            <div className={styles.Icon}>
+                <MainBackground />
+            </div>
+            <LoginButton placeholder={'기기 인증'} linkTo={'/home'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={84} right={(width - 386)/2} />
+        </div>
+    )
 }
 
 export default Home;

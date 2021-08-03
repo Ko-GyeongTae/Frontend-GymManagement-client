@@ -1,0 +1,12 @@
+.Container {
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.Icon {
+    padding-top: 10%;
+    position: relative;
+    text-align: center;
+}
