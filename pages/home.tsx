@@ -12,8 +12,8 @@ const Home = () => {
       </Head>
       <div className={styles.Container}>
         <HomeBackground />
-        <LoginButton placeholder={'회원가입'} linkTo={'/signup'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={75} right={70} />
-        <LoginButton placeholder={'간편로그인'} linkTo={'/login'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={166} right={70} />
+        <LoginButton placeholder={'회원가입'} linkTo={'/auth/signup'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={75} right={70} />
+        <LoginButton placeholder={'간편로그인'} linkTo={'/auth/login'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={166} right={70} />
       </div>
     </>
   );

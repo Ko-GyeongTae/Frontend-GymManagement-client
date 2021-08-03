@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import Head from "next/head";
+import React from "react";
+import AuthHeader from "../../src/components/AuthHeader";
 
-const Home = () => {
+const Home = ({Component, pageProps}) => {
 
-  return (
-    <div>
-      <h1>Login</h1>
-      <h2>간편로그인</h2>
-    </div>
-  );
+    return (
+        <div>
+            <AuthHeader />
+            <Component {...pageProps} />
+        </div>
+    )
 }
-
 export default Home;
