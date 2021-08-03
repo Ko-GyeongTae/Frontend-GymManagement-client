@@ -1,13 +1,11 @@
 .Container {
     width: 100vw;
     height: 100vh;
-    background-color: blue;
 }
 
 .MainBox {
     width: 85%;
     height: 64%;
-    background-color: red;
     position: fixed;
     left: 50%;
     bottom: 18%;
@@ -19,7 +17,6 @@
     width: 100%;
     height: 85%;
     text-align: left;
-    background-color: aqua;
     position: fixed;
     bottom: 0%;
 }
@@ -27,9 +24,67 @@
 .ThirdBox {
     width: 100%;
     height: 72%;
-    background-color: blueviolet;
     position: fixed;
     bottom: 0;
+}
+
+.FirstLine {
+    display: flex;
+    width: 48%;
+    height: 65px;
+    border-radius: 32px;
+    border: 1px solid black;
+}
+
+.Line {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    margin-top: 30px; 
+    border-radius: 31px;
+    border: 1px solid black;
+}
+
+.ShortInput {
+    margin-left: 30px;
+    border: none;
+    font-size: 31px;
+    width: 70%;
+}
+
+.Input {
+    margin-left: 30px;
+    border: none;
+    font-size: 31px;
+    width: 87%;
+}
+
+.Circle1 {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #EBE9E7;
+}
+
+.Circle2 {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #D8D2CB;
+}
+
+.Circle3 {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #BAB3AB;
+}
+
+.Circle4 {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #707070;
 }
 
 .Title {
@@ -44,4 +99,10 @@
     margin-left: 10px;
     font-size: 33px;
     font-family: playbill;
+}
+
+.GenderText {
+    padding-left: 30px;
+    font-size: 31px;
+    color: #909090;
 }

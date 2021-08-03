@@ -34,13 +34,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div style={{ width: '100%', height: '80vh', display: 'flex', position: 'fixed', left: 0, bottom: 0, right: 0 }}>
-                    <div style={{ width: '40%', height: 'auto', backgroundColor: '#8C837A', alignItems: 'center' }}>
-                        <Link href='/login' passHref>
-                            <div style={{ width: '80%', height: '10%', lineHeight: '10%', backgroundColor: 'white', borderRadius: 49, textAlign: 'center', position: 'relative', left:'10%', right: '10%' }}>
-                                <p style={{ fontSize: '250%', fontFamily: 'Playbill', color: '#010101', paddingTop: '10%' }}>간편로그인</p>
-                            </div>
-                        </Link>
-                    </div>
+                    <div style={{ width: '40%', height: 'auto', backgroundColor: '#8C837A', alignItems: 'center' }}/>
                     <div style={{ width: '60%', height: '100%' }}>
                         <div style={{ width: '100%', height: '30%', textAlign: 'center', border: 1, borderStyle: 'solid', borderColor: '#707070' }}>
                             <div style={{ width: '100%', height: '40%' }}>
