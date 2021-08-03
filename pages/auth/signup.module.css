@@ -5,12 +5,12 @@
 }
 
 .MainBox {
-    width: 72%;
-    height: 48%;
+    width: 85%;
+    height: 64%;
     background-color: red;
     position: fixed;
     left: 50%;
-    bottom: 30%;
+    bottom: 18%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -26,8 +26,10 @@
 
 .ThirdBox {
     width: 100%;
-    height: 78%;
+    height: 72%;
     background-color: blueviolet;
+    position: fixed;
+    bottom: 0;
 }
 
 .Title {
