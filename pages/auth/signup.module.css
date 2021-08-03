@@ -1,0 +1,45 @@
+.Container {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+.MainBox {
+    width: 72%;
+    height: 48%;
+    background-color: red;
+    position: fixed;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.SubBox {
+    width: 100%;
+    height: 85%;
+    text-align: left;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0%;
+}
+
+.ThirdBox {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+}
+
+.Title {
+    margin-top: 0px;
+    font-size: 33px;
+    color: #606060;
+    font-family: HYGothic;
+}
+
+.Subtitle {
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 33px;
+    font-family: playbill;
+}
