@@ -12,8 +12,8 @@ const LoginButton = (props: any) => {
     )*/
     return (
         <Link href={props.linkTo} passHref>
-            <div style={{width: 386, height: 68, backgroundColor: props.backgroundColor, position: 'absolute', right: props.right, bottom: props.bottom, borderRadius: 49, textAlign: 'center'}}>
-                <p style={{fontSize: 23, fontFamily: 'Playbill', color: props.fontColor}}>{props.placeholder}</p>
+            <div style={{width: 400, height: 55, backgroundColor: props.backgroundColor, opacity: 0.57, position: 'absolute', right: props.right, bottom: props.bottom, borderRadius: 49, textAlign: 'center'}}>
+                <p style={{fontSize: 27, fontFamily: 'Playbill', color: props.fontColor, top: 10, position:"relative"}}>{props.placeholder}</p>
             </div>
         </Link>
     )
