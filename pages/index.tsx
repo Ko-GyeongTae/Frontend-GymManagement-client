@@ -12,9 +12,7 @@ const Home = () => {
 
     return (
         <div className={styles.Container}>
-            <div className={styles.Icon}>
-                
-            </div>
+            <div className={styles.Icon}/>
             <LoginButton placeholder={'기기 인증'} linkTo={'/home'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={84} right={(width - 386)/2} />
         </div>
     )
