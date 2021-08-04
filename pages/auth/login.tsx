@@ -50,70 +50,70 @@ const Login = () => {
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('1');
                                     }}>
-                                        <h1>1</h1>
+                                        <p className={styles.KeypadText}>1</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('2');
                                     }}>
-                                        <h1>2</h1>
+                                        <p className={styles.KeypadText}>2</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('3');
                                     }}>
-                                        <h1>3</h1>
+                                        <p className={styles.KeypadText}>3</p>
                                     </div>
                                 </div>
                                 <div className={styles.KeypadRow}>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('4');
                                     }}>
-                                        <h1>4</h1>
+                                        <p className={styles.KeypadText}>4</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('5');
                                     }}>
-                                        <h1>5</h1>
+                                        <p className={styles.KeypadText}>5</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('6');
                                     }}>
-                                        <h1>6</h1>
+                                        <p className={styles.KeypadText}>6</p>
                                     </div>
                                 </div>
                                 <div className={styles.KeypadRow}>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('7');
                                     }}>
-                                        <h1>7</h1>
+                                        <p className={styles.KeypadText}>7</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('8');
                                     }}>
-                                        <h1>8</h1>
+                                        <p className={styles.KeypadText}>8</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('9');
                                     }}>
-                                        <h1>9</h1>
+                                        <p className={styles.KeypadText}>9</p>
                                     </div>
                                 </div>
                                 <div className={styles.KeypadRow}>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         setPhoneNum(phoneNum.slice(0, -1));
                                     }}>
-                                        <h1>지우기</h1>
+                                        <p className={styles.KeypadText}>지우기</p>
                                     </div>
                                     <div className={styles.KeypadCell} onClick={() => {
                                         InputNumber('0');
                                     }}>
-                                        <h1>0</h1>
+                                        <p className={styles.KeypadText}>0</p>
                                     </div>
-                                    <div className={styles.KeypadCell} onClick={async () => {
+                                    <div className={styles.KeypadCell} style={{backgroundColor: "#C7C7C7"}} onClick={async () => {
                                         let token = await login({ phone: phoneNum })
                                         console.log(token);
                                         setCookie('accessToken', token, { path: '/' });
                                     }}>
-                                        <h1>확인</h1>
+                                        <p className={styles.KeypadText} style={{color: "white"}}>확인</p>
                                     </div>
                                 </div>
                             </div>

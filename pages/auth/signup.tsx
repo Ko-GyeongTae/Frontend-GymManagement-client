@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Checkbox } from "semantic-ui-react";
-import AuthHeader from "../../src/components/AuthHeader";
 import styles from './signup.module.css';
 
 const Home = () => {
@@ -12,7 +11,7 @@ const Home = () => {
     }, [gender])
     return (
         <div className={styles.Container}>
-            <AuthHeader />
+            <div className={styles.Head}/> 
             <div className={styles.MainBox}>
                 <p className={styles.Title}>JOIN US</p>
                 <div className={styles.SubBox}>

@@ -3,6 +3,14 @@
     height: 100vh;
 }
 
+.Head {
+    width: 100vw;
+    height: 67px;
+    background-image: url('/images/AuthHead.svg');
+    top: 30px;
+    position: relative;
+}
+
 .MainBox {
     width: 85%;
     height: 64%;
