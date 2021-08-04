@@ -6,7 +6,9 @@
 }
 
 .Icon {
-    padding-top: 10%;
-    position: relative;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url('/images/MainBack.svg');
 }
