@@ -11,7 +11,7 @@ const Home = () => {
     }, [gender])
     return (
         <div className={styles.Container}>
-            <div className={styles.Head}/> 
+            <div className={styles.Head} />
             <div className={styles.MainBox}>
                 <p className={styles.Title}>JOIN US</p>
                 <div className={styles.SubBox}>
@@ -24,9 +24,15 @@ const Home = () => {
                             </div>
                             <div className={styles.FirstLine} style={{ marginLeft: '4%' }}>
                                 <div className={styles.Circle1} />
-                                <p className={styles.GenderText}>성별</p>
-                                <Checkbox label='남자' checked={gender !== 0 && gender % 2 === 1} onClick={()=>setGender(1)}/>
-                                <Checkbox label='여자' checked={gender !== 0 && gender % 2 === 0} onClick={()=>setGender(2)}/>
+                                <div>
+                                    <p className={styles.GenderText}>성별</p>
+                                </div>
+                                <div className={styles.CheckArea}>
+                                    <Checkbox checked={gender !== 0 && gender % 2 === 1} onClick={() => setGender(1)} />
+                                    <p className={styles.Gender}>남자</p>
+                                    <Checkbox checked={gender !== 0 && gender % 2 === 0} onClick={() => setGender(2)} />
+                                    <p className={styles.Gender}>여자</p>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.Line}>

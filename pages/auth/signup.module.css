@@ -41,6 +41,7 @@
     width: 48%;
     height: 65px;
     border-radius: 32px;
+    align-items: center;
     border: 1px solid black;
 }
 
@@ -111,6 +112,20 @@
 
 .GenderText {
     padding-left: 30px;
+    font-size: 31px;
+    color: #909090;
+}
+
+.CheckArea {
+    display: flex;
+    width: 180px;
+    height: 100%;
+    margin-left: 10px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.Gender {
     font-size: 31px;
     color: #909090;
 }
