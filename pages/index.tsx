@@ -1,4 +1,4 @@
-import { url } from 'inspector';
+import Head from 'next/head';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import LoginButton from '../src/components/LoginButton';
@@ -11,10 +11,15 @@ const Home = () => {
     })
 
     return (
-        <div className={styles.Container}>
-            <div className={styles.Icon}/>
-            <LoginButton placeholder={'기기 인증'} linkTo={'/home'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={84} right={(width - 386)/2} />
-        </div>
+        <>
+            <Head>
+                <title>Wim-Gym | Home</title>
+            </Head>
+            <div className={styles.Container}>
+                <div className={styles.Icon} />
+                <LoginButton placeholder={'기기 인증'} linkTo={'/home'} backgroundColor={'#8c837a'} fontColor={'#ffffff'} bottom={84} right={(width - 386) / 2} />
+            </div>
+        </>
     )
 }
 

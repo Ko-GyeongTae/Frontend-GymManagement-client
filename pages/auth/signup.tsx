@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Checkbox } from "semantic-ui-react";
@@ -10,6 +11,10 @@ const Home = () => {
         console.log(window.outerHeight);
     }, [gender])
     return (
+        <>
+        <Head>
+            <title>Wim-Gym | Signup</title>
+        </Head>
         <div className={styles.Container}>
             <div className={styles.Head} />
             <div className={styles.MainBox}>
@@ -51,6 +56,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
