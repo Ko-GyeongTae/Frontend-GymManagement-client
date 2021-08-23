@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import router from 'next/router';
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import LoginButton from '../src/components/LoginButton';
-import styles from './index.module.css'
+import Link from 'next/link';
+import React from 'react';
 
 const Home = () => {
     return (
@@ -11,13 +8,17 @@ const Home = () => {
             <Head>
                 <title>Wim-Gym | Home</title>
             </Head>
-            <div className={styles.Container}>
-                <div>
-                    <h1>관리자 전용 페이지</h1>
-                </div>
-                <div>
-                    <h1>일반 사용자 페이지</h1>
-                </div>
+            <div style={{ width: '100vw', height: '100vh', alignItems: 'center', justifyContent: 'center' }}>
+                <Link href='/' passHref>
+                    <div style={{ width: '100vw', height: 300, textAlign: 'center', marginTop: 50 }}>
+                        <h1 style={{ fontSize: 50 }}>관리자 전용 페이지</h1>
+                    </div>
+                </Link>
+                <Link href='/home' passHref>
+                    <div style={{ width: '100vw', height: 300, textAlign: 'center', marginTop: 50 }}>
+                        <h1 style={{ fontSize: 50 }}>일반 사용자 페이지</h1>
+                    </div>
+                </Link>
             </div>
         </>
     )
