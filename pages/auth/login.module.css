@@ -82,6 +82,10 @@
 }
 
 .NumberInnerNoticeText {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
     font-size: 15px;
 }
 

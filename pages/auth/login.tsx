@@ -4,6 +4,7 @@ import styles from './login.module.css';
 import Link from 'next/link';
 import login from "../api/auth/login";
 import { useCookies } from "react-cookie";
+import { error } from "console";
 
 const Login = () => {
     const [phoneNum, setPhoneNum] = useState("");
@@ -18,6 +19,24 @@ const Login = () => {
         console.log(phoneNum);
         console.log('rerender');
     });
+
+    const showAlert = (args: string) => {
+        if (args === 'u') {
+            return (
+                <div>
+                    <h1>안녕하세요</h1>
+                    <p>이용약관안내입니다.</p>
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <h1>반갑습니다</h1>
+                    <p>개인정보취급방침입니다.</p>
+                </div>
+            )
+        }
+    }
 
     return ( 
         <>
@@ -41,7 +60,7 @@ const Login = () => {
                                 <p className={styles.NumberInnerText}>{phoneNum.slice(0, 3) + (phoneNum.length > 3 ? '-' : "") + phoneNum.slice(3, 7) + (phoneNum.length > 7 ? '-' : "") + phoneNum.slice(7, 11)}</p>
                             </div>
                             <div className={styles.NumberInnerNoticeBox}>
-                                <p className={styles.NumberInnerNoticeText}><Link href='/' passHref>이용약관</Link>과 <Link href='/'>개인정보취급방침</Link>에 동의하시면 휴대전화 번호 입력 후 아래 확인 버튼을 터치하세요.</p>
+                                <div className={styles.NumberInnerNoticeText}><p onClick={() => showAlert('u')}>이용약관</p><p style={{paddingRight: 5}}> 과 </p><p onClick={() => showAlert('p')}>개인정보취급방침</p><p> 에 동의하시면 휴대전화 번호 입력 후 아래 확인 버튼을 터치하세요.</p></div>
                             </div>
                         </div>
                         <div className={styles.KeypadBox}>
